@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Aleksandr  Kavun](https://up.htmlacademy.ru/htmlcss/35/user/1892971).
-* Наставник: `Ярослав Шевцов`.
+* Наставник: `Ярослав Шевцов`. (https://htmlacademy.ru/profile/redx)
 
 ---
 
