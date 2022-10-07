@@ -100,13 +100,11 @@
           Стоимость, ₽:
           <div class="day-cost">
             <div class="cost-field field-one">
-              <input class="cost-input" type="text" name="from"
-              id="from" placeholder="0">
+              <input class="cost-input" type="text" name="from" id="from" placeholder="0">
               <label class="cost-label" for="from">От</label>
              </div>
                 <div class="cost-field field-two">
-                  <input class="cost-input" type="text" name="before"
-                  id="from" placeholder="9000">
+                  <input class="cost-input" type="text" name="before" id="before" placeholder="9000">
                   <label class="cost-label" for="before">До</label>
                 </div>
             </div>
@@ -116,21 +114,102 @@
               <div class="slider-circle circle-right"></div>
             </div>
                 <button class="button" type="submit">Применить</button>
-                <button class="button" type="submit">Сбросить</button>
+                <button class="button" type="reset">Сбросить</button>
         </fieldset>
       </div>
       <section class="catalog">
+        <h3>Найдено гостиниц: 38</h3>
+        <select class="select-control" aria-label="Сортировка">
+          <option value="cheap">Сначала дешёвое</option>
+          <option value="popular">Сначала популярное</option>
+          <option value="expensive">Сначала дорогое</option>
+        </select>
+            <a class="button" href="#">
+              <span class="visually-hidden">Показать карточки</span>
+            </a>
+            <a class="button" href="#">
+              <span class="visually-hidden">Широкая карточка</span>
+            </a>
+            <a href="#" class="button button-light">
+              <span class="visually-hidden">Показать список</span>
+            </a>
+            <ul class="product-list">
+              <li class="product-card">
+                <a class="product-card-link" href="product.html"></a>
+                  <img class="product-card-image" src="" alt="">
+                  <h3 class="product-card-title">Amara Resort & Spa</h3>
+                  <p>Гостиница</p>
+                  <p>От 4000 ₽</p>
+                  <a class="product-card-button button" href="#">подробнее</a>
+                  <a class="product-card-button button" href="#">в избранное</a>
+                  <p>Рейтинг: 8,5</p>
 
+              </li>
+              <li class="product-card">
+                <a class="product-card-link" href="product.html"></a>
+                  <img class="product-card-image" src="" alt="">
+                  <h3 class="product-card-title">Villas at Poco Diablo</h3>
+                  <p>Гостиница</p>
+                  <p>От 5000 ₽</p>
+                  <a class="product-card-button button" href="#">подробнее</a>
+                  <a class="product-card-button button" href="#">в избранное</a>
+                  <p>Рейтинг: 9,2</p>
+
+              </li>
+              <li class="product-card">
+                <a class="product-card-link" href="product.html"></a>
+                  <img class="product-card-image" src="" alt="">
+                  <h3 class="product-card-title">Desert Quail Inn</h3>
+                  <p>Гостиница</p>
+                  <p>От 2500 ₽</p>
+                  <a class="product-card-button button" href="#">подробнее</a>
+                  <a class="product-card-button button" href="#">в избранное</a>
+                  <p>Рейтинг: 6,9</p>
+
+              </li> <li class="product-card">
+                <a class="product-card-link" href="product.html"></a>
+                  <img class="product-card-image" src="" alt="">
+                  <h3 class="product-card-title">GreenTree Inn</h3>
+                  <p>Гостиница</p>
+                  <p>От 1500 ₽</p>
+                  <a class="product-card-button button" href="#">подробнее</a>
+                  <a class="product-card-button button" href="#">в избранное</a>
+                  <p>Рейтинг: 5,0</p>
+
+              </li>
+            </ul>
+                  <ul class="pagination">
+                    <li class="pagination-item">
+                      <a class="pagination-link pagination-current">1</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link" href="#">2</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link" href="#">3</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link" href="#">4</a>
+                    </li>
+                    <li class="pagination-item-show-more">
+                      <a class="pagination-link" href="#">...</a>
+                    </li>
+                    <li class="pagination-item">
+                      <a class="pagination-link" href="#">10</a>
+                    </li>
+                  </ul>
+                  <button class="button pagination-show-more" type="button">Показать ещё</button>
       </section>
-
-
-
-
-
-
-
-
-
+      <section class="subscription">
+        <h2>Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
+        <form id="asd_subscribe_form" method="post" action="/">
+          <div class="submit_group">
+              <input type="text" placeholder="Введите e-mail" value="" name="asd_email">
+              <button type="submit" value="Подписаться" id="asd_subscribe_submit" name="asd_submit">Подписаться</button>
+          </div>
+        </form>
+      </section>
     </main>
     <footer class="page-footer">
       <ul class="footer-social-list">
@@ -140,21 +219,20 @@
           </a>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="#">
+          <a class="button" href="#"></a>
             <span class="visually-hidden">Телеграм</span>
         </li>
         <li class="footer-social-item">
-          <a class="button" href="#">
+          <a class="button" href="#"></a>
             <span class="visually-hidden">Ютуб</span>
         </li>
       </ul>
         <address class="contacts-address">
-          <a class="contacts-phone" href="tel: +7(812) 812-12-12">+7(812) 812-12-128</a>
+          <a class="contacts-phone" href="tel:+7(812)812-12-12">+7(812)812-12-128</a>
         </address>
       <p class="about-text">
           <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
       </p>
-    </section>
     </footer>
   </body>
 </html>
