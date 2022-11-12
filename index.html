@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+    <div class="page-container">
     <header class="page-header">
       <a class="main-logo">
         <img src="./images/logo-header.png" alt="Логотип сайта Седона">
@@ -22,7 +23,7 @@
             <a class="navigation-link" href="#" >Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navigation-user">
+        <ul class="navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
               <span class="visually-hidden">
@@ -44,13 +45,12 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">Хочу сюда</a>
+            <button class="navigation-link" href="#">Хочу сюда!</button>
           </li>
         </ul>
       </nav>
     </header>
     <main class="main-container main-index">
-      <div class="page-container">
       <div class="welcome">
       <img src="images/welcome.svg" alt="welcome-sedona">
       <h1 class="visually-hidden">Седона</h1>
@@ -63,10 +63,12 @@
       <section class="review">
         <section class="card-row">
           <div class="card-card-blue">
-            <h2>Настоящий городок</h2>
-            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-            <img class="town" src="images/picture1.jpg" alt="town">
-          </div>
+              <div class="card-wrap">
+                <h2>Настоящий городок</h2>
+                <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+              </div>
+                <img class="town" src="images/picture1.jpg" alt="town">
+              </div>
           <ul class="benefits">
             <li class="benefits-item benefits-item-space">
               <h3>небольшая площадь</h3>
@@ -85,8 +87,10 @@
         <section class="card-row card-reverse">
           <div class="card">
             <img class="logo" src="images/picture2.jpg" alt="bridge">
-            <h2>Там есть мост дьявола</h2>
-            <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <div class="card-wrap">
+              <h2>Там есть мост дьявола</h2>
+              <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              </div>
           </div>
           <ul class="advantages">
             <li class="advantages-item advantages-item-home">
@@ -143,7 +147,6 @@
           </div>
         </form>
       </section>
-    </div>
     </main>
     <footer class="page-footer">
       <ul class="footer-social-list">
@@ -178,5 +181,6 @@
             <img src="images/html-academy.svg" alt="htmlacademy">
           </a>
     </footer>
+  </div>
   </body>
 </html>
