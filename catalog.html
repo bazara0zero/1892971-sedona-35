@@ -53,78 +53,83 @@
     <main>
       <section class="filters">
         <h2 class="hotel">Гостиницы Седоны</h2>
-      </section>
-      <fieldset class="catalog-filter-group">
-        <legend class="catalog-filter-title">Инфраструктура:</legend>
-        <ul class="catalog-filter-list">
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="pool" checked>
-                  Бассейн
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-                <label class="control">
-                  <input class="control-input" type="checkbox" name="parking" checked>
-                  Парковка
-                </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="wi-fi">
-                Wi-Fi
-              </label>
-           </li>
-          </ul>
-      </fieldset>
-      <fieldset class="catalog-filter-group">
-        <legend class="catalog-filter-title">Тип жилья:</legend>
-        <ul class="catalog-filter-list">
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="hotel" checked>
 
-                Гостиница
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="motel" >
+        <div class="wrap-filters">
+          <div class="wrap-infa">
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Инфраструктура:</legend>
+              <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="pool" checked>
+                        Бассейн
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                      <label class="control">
+                        <input class="control-input" type="checkbox" name="parking" checked>
+                        Парковка
+                      </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="checkbox" name="wi-fi">
+                      Wi-Fi
+                    </label>
+                </li>
+                </ul>
+            </fieldset>
+            <fieldset class="catalog-filter-group">
+              <legend class="catalog-filter-title">Тип жилья:</legend>
+              <ul class="catalog-filter-list">
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="product-group" value="hotel" checked>
 
-                Мотель
-              </label>
-            </li>
-            <li class="catalog-filter-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="apartments">
+                      Гостиница
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="product-group" value="motel" >
 
-                Апартаменты
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <div class="prise-wrapper">
-        <fieldset class="filter-item">
-          Стоимость, ₽:
-          <div class="day-cost">
-            <div class="cost-field field-one">
-              <input class="cost-input" type="text" name="from" id="from" placeholder="0">
-              <label class="cost-label" for="from">От</label>
-             </div>
+                      Мотель
+                    </label>
+                  </li>
+                  <li class="catalog-filter-item">
+                    <label class="control">
+                      <input class="control-input" type="radio" name="product-group" value="apartments">
+
+                      Апартаменты
+                    </label>
+                  </li>
+                </ul>
+            </fieldset>
+            </div>
+          <div class="prise-wrapper">
+            <fieldset class="filter-item">
+              Стоимость, ₽:
+              <div class="day-cost">
+                <div class="cost-field field-one">
+                  <input class="cost-input" type="text" name="from" id="from" placeholder="0">
+                  <label class="cost-label" for="from">От</label>
+                </div>
                 <div class="cost-field field-two">
                   <input class="cost-input" type="text" name="before" id="before" placeholder="9000">
                   <label class="cost-label" for="before">До</label>
                 </div>
-            </div>
-            <div class="cost-slider">
-              <div class="slider-bar"></div>
-              <div class="slider-circle circle-left"></div>
-              <div class="slider-circle circle-right"></div>
-            </div>
-                <button class="button" type="submit">Применить</button>
-                <button class="button" type="reset">Сбросить</button>
-        </fieldset>
-      </div>
+              </div>
+              <div class="cost-slider">
+                <div class="slider-bar"></div>
+                <div class="slider-circle circle-left"></div>
+                <div class="slider-circle circle-right"></div>
+              </div>
+              <button class="button" type="submit">Применить</button>
+              <button class="button" type="reset">Сбросить</button>
+            </fieldset>
+          </div>
+        </div>
+      </section>
       <section class="catalog">
         <h3>Найдено гостиниц: 38</h3>
         <select class="select-control" aria-label="Сортировка">
