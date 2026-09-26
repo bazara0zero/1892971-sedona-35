@@ -1,6 +1,27 @@
 'use strict';
 
 const FAVORITES_KEY = 'sedona-favorites';
+const DEFAULT_FAVORITES_KEY = 'sedona-default-favorites-v2';
+const DEFAULT_FAVORITES = [
+  {
+    id: 'canyon-view-lodge',
+    name: 'Canyon View Lodge',
+    type: 'Апартаменты',
+    price: '3200',
+    rating: '8,8',
+    stars: '4',
+    image: 'images/hotel-1.jpg',
+  },
+  {
+    id: 'red-rock-suites',
+    name: 'Red Rock Suites',
+    type: 'Апартаменты',
+    price: '6200',
+    rating: '9,0',
+    stars: '4',
+    image: 'images/hotel-3.jpg',
+  },
+];
 
 const readFavorites = () => {
   try {
@@ -87,8 +108,21 @@ document.addEventListener('DOMContentLoaded', () => {
     favorites = catalogCards
       .filter((card) => card.querySelector('.add-to-favs')?.classList.contains('selected-button'))
       .map(cardData);
-    writeFavorites(favorites);
   }
+
+  if (!localStorage.getItem(DEFAULT_FAVORITES_KEY)) {
+    const catalogDefaults = DEFAULT_FAVORITES.map((defaultHotel) => {
+      const card = catalogCards.find((item) => item.dataset.hotelId === defaultHotel.id);
+      return card ? cardData(card) : defaultHotel;
+    });
+    favorites = [
+      ...favorites,
+      ...catalogDefaults.filter((defaultHotel) => !favorites.some((hotel) => hotel.id === defaultHotel.id)),
+    ];
+    localStorage.setItem(DEFAULT_FAVORITES_KEY, 'true');
+  }
+
+  writeFavorites(favorites);
 
   updateCounters(favorites.length);
   catalogCards.forEach((card) => {
