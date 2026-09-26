@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Седона</title>
   <link rel="stylesheet" href="styles/styles.css">
-  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="logo.ico">
   <link rel="icon" type="image/png" href="images/favicon.png">
 </head>
 
@@ -13,16 +13,16 @@
   <div class="container">
     <header class="page-header">
       <nav class="page-navigation">
-        <a class="logo-link" href="#"><img class="logo-img" src="images/logo.svg" width="139" height="70"
+        <a class="logo-link" href="index.html"><img class="logo-img" src="images/logo.svg" width="139" height="70"
             alt="Логотип Седоны."></a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link navigation-link-current" href="#">
+            <a class="navigation-link navigation-link-current" href="index.html">
               Главная
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
+            <a class="navigation-link" href="index.html#about">
               О Седоне
             </a>
           </li>
@@ -34,7 +34,7 @@
         </ul>
         <ul class="user-navigation">
           <li class="navigation-item">
-            <a class="navigation-link search" href="#">
+            <a class="navigation-link search" href="#search">
               <span class="visually-hidden">Поиск.</span> <svg width="19" height="19" viewBox="0 0 19 19" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -44,9 +44,9 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link favs " href="#">
+            <a class="navigation-link favs" href="favorites.html">
               <span class="visually-hidden">Избранное.</span>
-              <span class="number-favs">12</span>
+              <span class="number-favs">0</span>
               <svg width="19" height="17" viewBox="0 0 19 17" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <path
@@ -67,7 +67,7 @@
         <div class="sedona-welcome">
           <img class="sedona-img" src="images/welcome.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona.">
         </div>
-        <section class="advantages">
+        <section class="advantages" id="about">
           <div class="reasons-container">
             <h2 class="advantages-title">Седона — небольшой городок в Аризоне,
               заслуживающий большего!</h2>
@@ -130,7 +130,7 @@
       <section class="index-newsletter">
         <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
         <p class="newsletter-subscription">Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+        <form class="newsletter-form" action="#" method="post">
           <input class="email" type="email" name="email" placeholder="Ваш e-mail">
           <button class="button second-button submit-button" type="submit">Подписаться</button>
         </form>
@@ -169,15 +169,15 @@
       </section>
     </footer>
   </div>
-  <div class="modal-container modal-container-close">
+  <div class="modal-container modal-container-close" id="search" role="dialog" aria-modal="true" aria-labelledby="modal-title">
     <div class="modal modal-search">
       <button class="modal-close-button">
         <svg width="13" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z"/></svg>
         <span class="visually-hidden">Закрыть.</span>
       </button>
       <section class="modal-content">
-        <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-        <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+        <h2 class="modal-title" id="modal-title">Поиск гостиницы в Седоне</h2>
+        <form class="search-form" action="#" method="post">
           <div class="field-group modal-date">
             <label class="modal-label" for="date-in">Дата Заезда:</label>
             <div class="date-field-wrap">
@@ -235,6 +235,7 @@
       </section>
     </div>
   </div>
+  <script src="scripts/script.js" defer></script>
 </body>
 
 </html>

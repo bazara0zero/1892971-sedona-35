@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Избранное — Седона</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body class="favorites-page">
+  <div class="container">
+    <header class="page-header">
+      <nav class="page-navigation" aria-label="Основная навигация">
+        <a class="logo-link" href="index.html"><img class="logo-img" src="images/logo.svg" width="139" height="70" alt="Логотип Седоны."></a>
+        <ul class="navigation-list">
+          <li class="navigation-item"><a class="navigation-link" href="index.html">Главная</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="index.html#about">О Седоне</a></li>
+          <li class="navigation-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
+        </ul>
+        <ul class="user-navigation">
+          <li class="navigation-item"><a class="navigation-link search" href="index.html#search"><span class="visually-hidden">Поиск.</span>⌕</a></li>
+          <li class="navigation-item"><a class="navigation-link favs navigation-link-current" href="favorites.html"><span class="visually-hidden">Избранное.</span><span class="number-favs">0</span>♥</a></li>
+          <li><a class="button want-button basic-button" href="index.html#search">Хочу сюда!</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="favorites-main">
+      <section class="favorites-hero">
+        <h1 class="inner-title">Избранное</h1>
+        <ul class="breadcrumbs">
+          <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="index.html">Главная</a></li>
+          <li class="breadcrumbs-item breadcrumbs-catalog"><span>Избранное</span></li>
+        </ul>
+      </section>
+      <section class="favorites-content" aria-labelledby="favorites-title">
+        <div class="favorites-heading-row">
+          <h2 class="results-title" id="favorites-title">Сохранённые гостиницы</h2>
+          <a class="button second-button" href="catalog.html">Найти ещё</a>
+        </div>
+        <div class="favorites-results" data-favorites-list></div>
+        <p class="favorites-empty" data-favorites-empty hidden>В избранном пока ничего нет. Откройте каталог и добавьте понравившиеся гостиницы.</p>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <section class="newsletter">
+        <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+        <p class="newsletter-subscription">Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form class="newsletter-form" action="#" method="post">
+          <input class="email" type="email" name="email" placeholder="Ваш e-mail" required>
+          <button class="button second-button submit-button" type="submit">Подписаться</button>
+        </form>
+      </section>
+      <section class="contacts">
+        <ul class="social-list">
+          <li class="social-item"><a class="social-link vk" href="https://vk.com/htmlacademy"><span class="visually-hidden">VK</span>VK</a></li>
+          <li class="social-item"><a class="social-link tg" href="https://t.me/htmlacademy"><span class="visually-hidden">Telegram</span>Telegram</a></li>
+          <li class="social-item"><a class="social-link yt" href="https://youtube.com/user/htmlacademyru"><span class="visually-hidden">YouTube</span>YouTube</a></li>
+        </ul>
+        <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+        <a class="html-academy-link" href="https://htmlacademy.ru/">HTML Academy</a>
+      </section>
+    </footer>
+  </div>
+  <script src="scripts/script.js" defer></script>
+</body>
+
+</html>

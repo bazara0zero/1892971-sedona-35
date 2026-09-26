@@ -1099,7 +1099,6 @@ body {
 
 .breadcrumbs-main {
   fill: #ffffff;
-  `
 }
 
 .breadcrumbs-link:hover,
@@ -1253,7 +1252,9 @@ body {
   display: flex;
 }
 
-.guests-button :active, :hover, :focus {
+.guests-button:active,
+.guests-button:hover,
+.guests-button:focus {
   outline: 0;
   outline-offset: 0;
 }
@@ -1326,6 +1327,257 @@ body {
 
 .modal-container-close {
   display: none;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+.form-status {
+  margin: 10px 0 0;
+  color: #2e7d32;
+  font-size: 16px;
+}
+
+.favorites-hero {
+  color: #ffffff;
+  background-color: #68a2ca;
+  background-image: url("../images/background-form.jpg");
+  background-size: cover;
+  padding: 32px 70px 68px;
+}
+
+.favorites-hero .inner-title {
+  margin-bottom: 12px;
+}
+
+.favorites-hero .breadcrumbs {
+  margin-bottom: 0;
+}
+
+.favorites-hero .breadcrumbs a,
+.favorites-hero .breadcrumbs span {
+  color: #ffffff;
+}
+
+.favorites-content {
+  padding: 50px 70px 80px;
+}
+
+.favorites-heading-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.favorites-heading-row .results-title {
+  margin: 0;
+}
+
+.favorites-results {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.favorites-empty {
+  max-width: 620px;
+  margin: 48px auto 0;
+  text-align: center;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    width: 100%;
+  }
+
+  .page-header {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .advantages-box img,
+  .advantages-wrapper,
+  .advantages-item,
+  .town-qualities-item {
+    width: 33.333%;
+    box-sizing: border-box;
+  }
+
+  .advantages-wrapper,
+  .advantages-item {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .booking {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media (max-width: 760px) {
+  .page-header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .page-navigation,
+  .navigation-list,
+  .user-navigation,
+  .advantages-box,
+  .advantages-list,
+  .town-qualities-list,
+  .contacts,
+  .housing-results,
+  .results-title-box,
+  .catalog-filter {
+    flex-direction: column;
+  }
+
+  .page-navigation,
+  .navigation-list,
+  .user-navigation {
+    align-items: center;
+    width: 100%;
+    max-width: none;
+  }
+
+  .logo-link {
+    margin: 0;
+  }
+
+  .navigation-list .navigation-link {
+    margin: 0 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .user-navigation {
+    justify-content: center;
+    margin-left: 0;
+  }
+
+  .advantages-title,
+  .advantages-reasons,
+  .booking-subscription,
+  .newsletter-subscription {
+    width: auto;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  .advantages-box img,
+  .advantages-wrapper,
+  .advantages-item,
+  .town-qualities-item {
+    width: 100%;
+  }
+
+  .advantages-box img {
+    height: auto;
+  }
+
+  .advantages-wrapper,
+  .advantages-item {
+    padding-top: 64px;
+    padding-bottom: 64px;
+  }
+
+  .index-newsletter,
+  .newsletter {
+    padding: 64px 24px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .email,
+  .submit-button {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .contacts {
+    align-items: center;
+    gap: 24px;
+    padding: 32px 24px;
+  }
+
+  .phone {
+    margin: 0;
+    font-size: 28px;
+  }
+
+  .housing-results {
+    grid-template-columns: 1fr;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .favorites-hero {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .favorites-content {
+    padding: 32px 24px 56px;
+  }
+
+  .favorites-heading-row {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .favorites-results {
+    grid-template-columns: 1fr;
+  }
+
+  .results-title-box {
+    gap: 20px;
+    padding: 32px 24px;
+  }
+
+  .results-title {
+    margin: 0;
+  }
+
+  .filter-wrapper {
+    padding: 32px 24px;
+  }
+
+  .catalog-filter {
+    gap: 28px;
+  }
+
+  .modal {
+    width: calc(100% - 32px);
+    box-sizing: border-box;
+    padding: 48px 24px 32px;
+    border-radius: 16px;
+  }
+
+  .modal-close-button {
+    top: 20px;
+    right: 20px;
+  }
+
+  .search-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .date-field,
+  .modal-content {
+    max-width: 100%;
+    width: 100%;
+  }
 }
 
 .vk {
