@@ -76,6 +76,11 @@ document.addEventListener('DOMContentLoaded', () => {
     if (event.key === 'Escape') closeModal();
   });
 
+  if (modalContainer && window.location.hash === '#search') {
+    modalContainer.classList.remove('modal-container-close');
+    document.body.classList.add('modal-open');
+  }
+
   let favorites = readFavorites();
   const catalogCards = [...document.querySelectorAll('.housing-card[data-hotel-id]')];
   if (catalogCards.length && !localStorage.getItem(FAVORITES_KEY)) {
